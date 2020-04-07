@@ -1,0 +1,44 @@
+extends layout.pug
+block content
+    .section0Carousel
+      #carouselExampleIndicators.carousel.slide.max-1600(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+          li(data-target='#carouselExampleIndicators', data-slide-to='1')
+          li(data-target='#carouselExampleIndicators', data-slide-to='2')
+          li(data-target='#carouselExampleIndicators', data-slide-to='3')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='./../../source/img/index-carousel-001.png', alt='living room')
+          .carousel-item
+            img.d-block.w-100(src='./../../source/img/index-carousel-002.png', alt='bookshelf')
+          .carousel-item
+            img.d-block.w-100(src='./../../source/img/index-carousel-003.png', alt='living room')
+          .carousel-item
+            img.d-block.w-100(src='./../../source/img/index-carousel-004.png', alt='dining table')
+    .section1Slogan.container-fluid
+      .max-1600.h-flexCenter
+        .pic
+          img(src="./../../source/img/index-sec1-pic.jpg", alt="light")
+        .text.text-lg
+          img(src="./../../source/img/index-sec1-text.png", alt="slogan text")
+        .text.text-sm
+          img(src="./../../source/img/index-sec1-text-sm.png", alt="slogan text")
+    .section2Product
+      .container
+        .col.col-12.productPic
+          .row
+            a.col.col-lg-4.col-12(href="#")
+              .pic
+                img.blanket(src="./../../source/img/index-sec2-blanket.jpg", alt="blanket")
+              .productName 商品名blabla
+            a.col.col-lg-4.col-12(href="#")
+              .pic
+                img.vase(src="./../../source/img/index-sec2-vase.jpg", alt="vase")
+              .productName 商品名blabla
+            a.col.col-lg-4.col-12(href="#")
+              .pic
+                img.pillow(src="./../../source/img/index-sec2-pillow.jpg", alt="pillow")
+              .productName 商品名blabla
+        .col.col-12.h-flexCenter
+          a.more(href="./product.html") more...

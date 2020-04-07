@@ -1,0 +1,22 @@
+.productMenu_item>li {
+    font-size: $font-m;
+    padding: 12px;
+    &>a {
+        border-left: 5px solid $cyan;
+        padding-left: 15px;
+    }
+}
+
+.productMenu_item_subMenu {
+    padding-top: 8px;
+    li {
+        font-size: $font-s;
+        padding: 4px 20px;
+    }
+    a {
+        color: $lightGray;
+    }
+    a:hover {
+        color: $cyan;
+    }
+}

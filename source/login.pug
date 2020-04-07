@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include partial/_meta.pug
+    body
+        .login.h-flexCenter
+          .login_box.h-flexCenter
+            .logo_info
+              .login_logo
+                img(src="../../source/img/jailuluLogo_dark.svg", alt="Jailulu宅家飾 logo")
+              .title 帳號:
+              input#account(type="text" name="username" placeholder="Email address")
+              .title 密碼:
+              input#password(type="password" name="password")
+              #fail.title
+              .loginBtn 登入
+              .signUp
+                a(href="#") 加入會員
+
+        include partial/_jsLink.pug
+    

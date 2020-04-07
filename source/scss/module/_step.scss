@@ -1,0 +1,26 @@
+.m-step {
+    span {
+        font-size: $font-xl;
+    }
+    span+span {
+        font-size: $font-m;
+        font-weight: 600;
+    }
+    .step_block {
+        position: relative;
+        pointer-events: none;
+        width: 100%;
+    }
+    .step_arrow {
+        color: $lightGray;
+        margin: 0 20px;
+    }
+}
+
+.active {
+    background-color: $cyan;
+    border: 1px solid $cyan;
+    span {
+        color: $darkWhite;
+    }
+}

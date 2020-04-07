@@ -1,0 +1,22 @@
+{
+  "name": "1227_jailulu",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sharon Lin <sharonlin5963@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "vue": "^2.6.11",
+    "bootstrap": "^4.4.1"
+  }
+}

@@ -1,0 +1,19 @@
+extends layout.pug
+block content
+      .product.max-1600
+        .row
+          include partial/_productMenu
+          .col.col-lg-9.col-12
+            .productPath 首頁 > {{path.text}}
+            .row
+              .col.col-6.col-xl-4(v-for="(item,index) in newItems")
+                .product_box(:class="(item.isDiscount)?'isSale':''" )
+                  img(:data-num="index" 
+                      :src="'../../source/img/'+item.img_name+'.png'" 
+                      @click="goItemDetail()", alt="")
+                  .discount.h-flexCenter
+                    img(src="../../source/img/discount_bg.svg", alt="")
+                    div {{100-item.discount*100}}% off
+                  .product_name {{item.name}}
+                  span.product_price NT.{{item.price}}
+                  span.product_salePrice NT.{{Math.round(item.price*item.discount)}}

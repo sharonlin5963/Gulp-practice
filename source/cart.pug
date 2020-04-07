@@ -1,0 +1,78 @@
+extends layout.pug
+block content
+      .max-1600
+        .m-cartSpace
+          .m-step.h-flexCenter
+            .step_block.e-btn.active
+              span 01
+              span  輸入訂單資料
+            .step_arrow ►
+            .step_block.e-btn
+              span 02
+              span  確認付款
+            .step_arrow ►
+            .step_block.e-btn 
+              span 03
+              span  完成訂單
+          .m-list.shopList
+            .title 購物清單
+            hr
+            .shopList_item.isSale
+              .e-btn.delete X
+              .item_pic
+                img(src="../../source/img/test1500-1300.png",alt="")
+              .item_name 大大抱枕
+                br
+                span.product_price $500
+                span.product_salePrice $400
+              .quantity
+                .symbol.minus -
+                input.value(type="text" value="1")
+                .symbol.add +
+            hr
+            .shopList_item
+              .e-btn.delete X
+              .item_pic
+                img(src="../../source/img/test1500-1300.png",alt="")
+              .item_name 小小抱枕
+                br
+                span.product_price $500
+                span.product_salePrice $400
+              .quantity
+                .symbol.minus -
+                input.value(type="text" value="2")
+                .symbol.add +
+            hr
+            .total 
+              span 共
+              span.totalCount  9 
+              span 件商品
+              span     總計
+              span.totalPrice   ＄2700
+            .nextBtn
+              .e-btn.goCheckout 結帳去
+          .m-list.orderInfo
+            .title 訂單資訊
+            .orderInfo_info
+              .row
+                .col.col-md-6.col-12.orderInfo_title.fail 姓名
+                  .failState *此為必填問題
+                  br
+                  input(type="text")
+                .col.col-md-6.col-12.orderInfo_title 聯絡電話
+                  .failState *此為必填問題
+                  br
+                  input(type="text")
+              .orderInfo_title 收件地址
+                .failState *此為必填問題
+                br
+                input(type="text")
+              .orderInfo_title 郵件地址
+                .failState *此為必填問題
+                br
+                input(type="text")
+              .orderInfo_title 備註
+                br
+                textarea(name="text")
+            .nextBtn
+              a.e-btn(href="../../public/html/checkout.html") 確認

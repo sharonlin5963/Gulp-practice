@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  transition: .5s all;
+}
+html{
+    background-color: $darkWhite;
+    color: $darkGray;
+}
+a{
+    text-decoration: none;
+    color: $darkGray;
+    &:hover{
+        color: $cyan;
+    }
+}
+input:focus{
+    outline: none;
+}
+

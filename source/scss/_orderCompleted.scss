@@ -1,0 +1,17 @@
+.orderCompleted {
+    flex-direction: column;
+    margin: 100px 0;
+    .text {
+        font-size: $font-xxl;
+    }
+    .faceText {
+        font-size: $font-xl;
+        color: $orange;
+        margin: 55px 0;
+    }
+    .e-btn {
+        @include btnType(transparent, $font-l, $cyan);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

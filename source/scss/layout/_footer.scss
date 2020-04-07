@@ -1,0 +1,45 @@
+.l-footer {
+    width: 100%;
+    height: 400px;
+    background-color: $yellow;
+    border-bottom: 40px solid $cyan;
+}
+
+.containerBox {
+    display: inline-block;
+    text-align: center;
+}
+
+.logo {
+    font-size: $font-3xl;
+    & i {
+        color: $cyan;
+    }
+    & i:hover {
+        color: darken($cyan, 10);
+    }
+}
+
+.socialLink {
+    font-size: $font-xxl;
+    margin: 10px;
+    & a {
+        color: $lightGray;
+    }
+    & a:hover {
+        color: $cyan;
+    }
+}
+
+.info {
+    li {
+        list-style: none;
+        font-size: $font-s;
+        margin: 6px;
+    }
+}
+
+.state {
+    font-size: $font-xs;
+    line-height: 1rem;
+}

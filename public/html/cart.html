@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jailulu宅家飾</title>
+    <link rel="icon" href="../../source/img/favicon.ico.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../../source/img/favicon.ico.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../stylesheets/all.css"/>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <div class="navbar max-1600">
+          <div class="nav_toggle nav-item nav_bar">≡</div>
+          <div class="navbar-brand"><a href="../../public/html/index.html"><img src="./../../source/img/jailuluLogo_light.svg" alt="宅家飾jailulu logo"/></a></div>
+          <div class="nav_toggle nav-item nav_cart"><a href="../../public/html/cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          <div class="nav-menu">
+            <div class="nav-item"><a href="../../public/html/index.html"> 首頁</a></div>
+            <div class="nav-item productList"><a href="../../public/html/product.html"> 商品列表</a>
+              <ul>
+                <div class="triangle triDown">▾</div>
+                <li><a href="#">商品總覽</a></li>
+                <li class="dropdown" id="homeDecoration">
+                  <div class="triangle triRight">▸</div><a class="type" href="#">家具擺設
+                    <ul class="productItem">
+                      <li><a href="#">時鐘</a></li>
+                      <li><a href="#">花器</a></li>
+                      <li><a href="#">毛毯</a></li>
+                      <li><a href="#">抱枕</a></li>
+                    </ul></a>
+                </li>
+                <li class="dropdown" id="light">
+                  <div class="triangle triRight">▸</div><a class="type" href="#">照明
+                    <ul class="productItem">
+                      <li><a href="#">燈泡</a></li>
+                      <li><a href="#">燈飾</a></li>
+                    </ul></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-item sale"><a href="#"> sale</a></div>
+            <div class="nav_member nav-item nav-font"><a href="../../public/html/login.html"><i class="fas fa-user-circle"></i></a></div>
+            <div class="nav_cart nav-item nav-font"><a href="../../public/html/cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          </div>
+        </div>
+        <div class="fixBtn h-flexCenter"><i class="fas fa-caret-up"></i></div>
+      </div>
+      <div class="max-1600">
+        <div class="m-cartSpace">
+          <div class="m-step h-flexCenter">
+            <div class="step_block e-btn active"><span>01</span><span> 輸入訂單資料</span></div>
+            <div class="step_arrow">►</div>
+            <div class="step_block e-btn"><span>02</span><span> 確認付款</span></div>
+            <div class="step_arrow">►</div>
+            <div class="step_block e-btn"> <span>03</span><span> 完成訂單</span></div>
+          </div>
+          <div class="m-list shopList">
+            <div class="title">購物清單</div>
+            <hr/>
+            <div class="shopList_item isSale">
+              <div class="e-btn delete">X</div>
+              <div class="item_pic"><img src="../../source/img/test1500-1300.png" alt=""/></div>
+              <div class="item_name">大大抱枕<br/><span class="product_price">$500</span><span class="product_salePrice">$400</span></div>
+              <div class="quantity">
+                <div class="symbol minus">-</div>
+                <input class="value" type="text" value="1"/>
+                <div class="symbol add">+</div>
+              </div>
+            </div>
+            <hr/>
+            <div class="shopList_item">
+              <div class="e-btn delete">X</div>
+              <div class="item_pic"><img src="../../source/img/test1500-1300.png" alt=""/></div>
+              <div class="item_name">小小抱枕<br/><span class="product_price">$500</span><span class="product_salePrice">$400</span></div>
+              <div class="quantity">
+                <div class="symbol minus">-</div>
+                <input class="value" type="text" value="2"/>
+                <div class="symbol add">+</div>
+              </div>
+            </div>
+            <hr/>
+            <div class="total"> <span>共</span><span class="totalCount"> 9 </span><span>件商品</span><span>    總計</span><span class="totalPrice">  ＄2700</span></div>
+            <div class="nextBtn">
+              <div class="e-btn goCheckout">結帳去</div>
+            </div>
+          </div>
+          <div class="m-list orderInfo">
+            <div class="title">訂單資訊</div>
+            <div class="orderInfo_info">
+              <div class="row">
+                <div class="col col-md-6 col-12 orderInfo_title fail">姓名
+                  <div class="failState">*此為必填問題</div><br/>
+                  <input type="text"/>
+                </div>
+                <div class="col col-md-6 col-12 orderInfo_title">聯絡電話
+                  <div class="failState">*此為必填問題</div><br/>
+                  <input type="text"/>
+                </div>
+              </div>
+              <div class="orderInfo_title">收件地址
+                <div class="failState">*此為必填問題</div><br/>
+                <input type="text"/>
+              </div>
+              <div class="orderInfo_title">郵件地址
+                <div class="failState">*此為必填問題</div><br/>
+                <input type="text"/>
+              </div>
+              <div class="orderInfo_title">備註<br/>
+                <textarea name="text"></textarea>
+              </div>
+            </div>
+            <div class="nextBtn"><a class="e-btn" href="../../public/html/checkout.html">確認</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer h-flexCenter">
+        <div class="containerBox">
+          <div class="logo"><a href="./index.html"><i class="fas fa-home"></i></a></div>
+          <div class="social h-flexCenter">
+            <div class="socialLink"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-instagram"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-github"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-telegram-plane"></i></a></div>
+          </div>
+          <div class="info">
+            <li>Calling  01-2345-6789</li>
+            <li>jailulu@gmail.com</li>
+            <li>台北市中山區長井路666巷66號</li>
+            <div class="state">ⓒ 2019 Created by Sharon Lin .<br>僅個人練習使用，不做任何商業用途</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascripts/vendor.js"></script>
+    <script src="../javascripts/all.js"></script>
+  </body>
+</html>

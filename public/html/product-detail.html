@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jailulu宅家飾</title>
+    <link rel="icon" href="../../source/img/favicon.ico.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../../source/img/favicon.ico.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../stylesheets/all.css"/>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <div class="navbar max-1600">
+          <div class="nav_toggle nav-item nav_bar">≡</div>
+          <div class="navbar-brand"><a href="../../public/html/index.html"><img src="./../../source/img/jailuluLogo_light.svg" alt="宅家飾jailulu logo"/></a></div>
+          <div class="nav_toggle nav-item nav_cart"><a href="../../public/html/cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          <div class="nav-menu">
+            <div class="nav-item"><a href="../../public/html/index.html"> 首頁</a></div>
+            <div class="nav-item productList"><a href="../../public/html/product.html"> 商品列表</a>
+              <ul>
+                <div class="triangle triDown">▾</div>
+                <li><a href="#">商品總覽</a></li>
+                <li class="dropdown" id="homeDecoration">
+                  <div class="triangle triRight">▸</div><a class="type" href="#">家具擺設
+                    <ul class="productItem">
+                      <li><a href="#">時鐘</a></li>
+                      <li><a href="#">花器</a></li>
+                      <li><a href="#">毛毯</a></li>
+                      <li><a href="#">抱枕</a></li>
+                    </ul></a>
+                </li>
+                <li class="dropdown" id="light">
+                  <div class="triangle triRight">▸</div><a class="type" href="#">照明
+                    <ul class="productItem">
+                      <li><a href="#">燈泡</a></li>
+                      <li><a href="#">燈飾</a></li>
+                    </ul></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-item sale"><a href="#"> sale</a></div>
+            <div class="nav_member nav-item nav-font"><a href="../../public/html/login.html"><i class="fas fa-user-circle"></i></a></div>
+            <div class="nav_cart nav-item nav-font"><a href="../../public/html/cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          </div>
+        </div>
+        <div class="fixBtn h-flexCenter"><i class="fas fa-caret-up"></i></div>
+      </div>
+      <div class="product max-1600" id="app">
+        <div class="row">
+          <div class="col col-3 productMenu">
+            <ul class="productMenu_item">
+              <li><a href="#">商品總覽</a></li>
+              <li><a class="type" href="#">家具擺設</a>
+                <ul class="productMenu_item_subMenu">
+                  <li><a href="#">時鐘</a></li>
+                  <li><a href="#">花器</a></li>
+                  <li><a href="#">毛毯</a></li>
+                  <li><a href="#">抱枕</a></li>
+                </ul>
+              </li>
+              <li><a class="type" href="#">照明</a>
+                <ul class="productMenu_item_subMenu">
+                  <li><a href="#">燈泡</a></li>
+                  <li><a href="#">燈飾</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-lg-9 col-md-12 productPic">
+            <div class="productPath">首頁 > {{path}} > {{itemDetail.name}}</div>
+            <div class="productDetail" :class="(itemDetail.isDiscount)?'isSale':''">
+              <div class="row">
+                <div class="productDetail_pic col col-12 col-lg-7"><img :src="'../../source/img/'+itemDetail.img_name+'.png'" alt=""/>
+                  <div class="discount h-flexCenter"><img src="../../source/img/discount_bg.svg" alt=""/>
+                    <div>{{100-itemDetail.discount*100}}% off</div>
+                  </div>
+                </div>
+                <div class="col col-12 col-lg-5">
+                  <div class="product_name">{{itemDetail.name}}</div>
+                  <div class="product_description">{{itemDetail.description}}</div><span class="product_price">NT.{{itemDetail.price}}</span><span class="product_salePrice">NT.{{Math.round(itemDetail.price*itemDetail.discount)}}</span>
+                  <hr/>
+                  <div class="quantity">
+                    <div class="symbol minus">-</div>
+                    <input class="value" type="text" value="1"/>
+                    <div class="symbol add">+</div>
+                  </div>
+                  <div class="e-btn buy">加入購物車</div>
+                  <div class="bought">已加入</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer h-flexCenter">
+        <div class="containerBox">
+          <div class="logo"><a href="./index.html"><i class="fas fa-home"></i></a></div>
+          <div class="social h-flexCenter">
+            <div class="socialLink"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-instagram"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-github"></i></a></div>
+            <div class="socialLink"><a href="#"><i class="fab fa-telegram-plane"></i></a></div>
+          </div>
+          <div class="info">
+            <li>Calling  01-2345-6789</li>
+            <li>jailulu@gmail.com</li>
+            <li>台北市中山區長井路666巷66號</li>
+            <div class="state">ⓒ 2019 Created by Sharon Lin .<br>僅個人練習使用，不做任何商業用途</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascripts/vendor.js"></script>
+    <script src="../javascripts/all.js"></script>
+  </body>
+</html>

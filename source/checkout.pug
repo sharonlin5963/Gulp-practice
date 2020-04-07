@@ -1,0 +1,64 @@
+extends layout.pug
+block content
+      .max-1600
+        .m-cartSpace
+          .m-step.h-flexCenter
+            .step_block.e-btn
+              span 01
+              span  輸入訂單資料
+            .step_arrow ►
+            .step_block.e-btn.active
+              span 02
+              span  確認付款
+            .step_arrow ►
+            .step_block.e-btn 
+              span 03
+              span  完成訂單
+          .m-list.list-check
+            .list-check_title.list-check_item
+              .name 品名
+              .count 數量
+              .price 小計
+            hr
+            .list-check_item
+              .name 可愛花花大自然抱枕
+              .count 3
+              .price $400
+            hr
+            .list-check_item
+              .name 小小小小鳥抱枕
+              .count 3
+              .price $400
+            .total 
+              span 共
+              span.totalCount  9 
+              span 件商品
+              span     總計
+              span.totalPrice   ＄2700
+            
+            .list-check_item
+              .name 姓名
+              .content 我是誰
+            hr
+            .list-check_item
+              .name 聯絡電話
+              .content 0123-456-789
+            hr
+            .list-check_item
+              .name 收件地址
+              .content 台北市區區淤轆轆轆154巷57號
+            hr
+            .list-check_item
+              .name 郵件地址
+              .content abc@gmail.com
+            hr
+            .list-check_item
+              .name 備註
+              .content 無
+            hr
+            .list-check_item
+              .name 付款狀態
+              .content 尚未付款
+            .nextBtn
+                a.e-btn(href="../../public/html/orderCompleted.html") 確認付款
+            

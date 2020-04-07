@@ -1,0 +1,26 @@
+extends layout.pug
+block content
+      #app.product.max-1600
+        .row
+          include partial/_productMenu
+          .col.col-lg-9.col-md-12.productPic
+            .productPath 首頁 > {{path}} > {{itemDetail.name}}
+            .productDetail(:class="(itemDetail.isDiscount)?'isSale':''")
+              .row
+                .productDetail_pic.col.col-12.col-lg-7
+                  img(:src="'../../source/img/'+itemDetail.img_name+'.png'" , alt="")
+                  .discount.h-flexCenter
+                      img(src="../../source/img/discount_bg.svg", alt="")
+                      div {{100-itemDetail.discount*100}}% off
+                .col.col-12.col-lg-5
+                  .product_name {{itemDetail.name}}
+                  .product_description {{itemDetail.description}}
+                  span.product_price NT.{{itemDetail.price}}
+                  span.product_salePrice NT.{{Math.round(itemDetail.price*itemDetail.discount)}}
+                  hr
+                  .quantity
+                    .symbol.minus -
+                    input.value(type="text" value="1")
+                    .symbol.add +
+                  .e-btn.buy 加入購物車
+                  .bought 已加入

@@ -1,0 +1,48 @@
+.header
+  .navbar.max-1600
+    .nav_toggle.nav-item.nav_bar ≡
+    .navbar-brand
+      a(href="../../public/html/index.html")
+        img(src="./../../source/img/jailuluLogo_light.svg", alt="宅家飾jailulu logo")
+    .nav_toggle.nav-item.nav_cart
+      a(href="../../public/html/cart.html")
+          i.fas.fa-shopping-cart
+    .nav-menu
+      .nav-item
+        a(href="../../public/html/index.html")  首頁
+      .nav-item.productList
+        a(href="../../public/html/product.html")  商品列表
+        ul
+          .triangle.triDown ▾
+          li
+            a(href="#") 商品總覽
+          li#homeDecoration.dropdown
+            .triangle.triRight ▸
+            a.type(href="#") 家具擺設
+              ul.productItem
+                li
+                  a(href="#") 時鐘
+                li
+                  a(href="#") 花器
+                li
+                  a(href="#") 毛毯
+                li
+                  a(href="#") 抱枕
+          li#light.dropdown
+            .triangle.triRight ▸
+            a.type(href="#") 照明
+              ul.productItem
+                li
+                  a(href="#") 燈泡
+                li
+                  a(href="#") 燈飾
+      .nav-item.sale
+        a(href="#")  sale
+      .nav_member.nav-item.nav-font
+        a(href="../../public/html/login.html")
+          i.fas.fa-user-circle
+      .nav_cart.nav-item.nav-font
+        a(href="../../public/html/cart.html")
+          i.fas.fa-shopping-cart
+  .fixBtn.h-flexCenter
+      i.fas.fa-caret-up

@@ -1,0 +1,42 @@
+.list-check {
+    padding: 5% 13% 15%;
+    .nextBtn .e-btn:hover {
+        background-color: $orange;
+    }
+    .total {
+        margin: 60px 5%;
+    }
+}
+
+.list-check_item {
+    margin: 20px 5%;
+    padding: 5px;
+    position: relative;
+    .name,
+    .count,
+    .price,
+    .content {
+        vertical-align: top;
+        font-size: $font-m;
+        display: inline-block;
+    }
+    .price,
+    .count,
+    .content {
+        position: absolute;
+    }
+    .price {
+        right: 0;
+    }
+    .count {
+        right: 20%;
+    }
+    .content {
+        left: 30%;
+    }
+}
+
+.list-check_title {
+    font-weight: 800;
+    color: $cyan;
+}

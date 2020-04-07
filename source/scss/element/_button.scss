@@ -1,0 +1,47 @@
+@mixin btnType($bgColor, $fontSize, $hoverBgColor) {
+    background-color: $bgColor;
+    font-size: $fontSize;
+    &:hover {
+        background-color: $hoverBgColor;
+    }
+}
+
+.e-btn {
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid $lightGray;
+    color: $lightGray;
+    padding: 10px 0;
+    cursor: pointer;
+    &:hover {
+        color: $darkWhite;
+        border: none;
+    }
+}
+
+.quantity {
+    user-select: none;
+    text-align: right;
+    margin: 20px 0 35px 0;
+    .symbol,
+    .value {
+        display: inline-block;
+        font-size: $font-xl;
+        text-align: center;
+        color: $lightGray;
+    }
+    .symbol {
+        width: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .symbol:hover {
+        background-color: $cyan;
+        color: $darkWhite;
+    }
+    .value {
+        width: 50px;
+        border: none;
+        background: transparent;
+    }
+}
